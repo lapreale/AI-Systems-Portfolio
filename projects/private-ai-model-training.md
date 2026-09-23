@@ -1,4 +1,4 @@
-# Private AI Model Adaptation & Local Deployment
+# Private AI Model Training & Local Deployment
 
 ## Overview
 A privacy-first approach for adapting and deploying AI models inside controlled environments when organizations need stronger control over sensitive data, model behavior, cost or governance.
@@ -47,10 +47,10 @@ flowchart LR
 - internal API consumed by business applications
 
 ## What it demonstrates
-Private AI · model adaptation · LoRA-style fine-tuning · RAG · embeddings · evaluation · local inference · AI governance
+Private AI · model training · LoRA-style fine-tuning · RAG · embeddings · evaluation · local inference · AI governance
 
 ## My role
-Model/use-case selection, dataset/workflow design, evaluation strategy, local/private deployment architecture and business integration.
+Model/use-case selection, dataset/workflow design, evaluation strategy, model training, local/private deployment architecture and business integration.
 
 ## Public portfolio note
 Training datasets, model weights, proprietary prompts and evaluation criteria are not published.
