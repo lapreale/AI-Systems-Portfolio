@@ -45,7 +45,7 @@ flowchart LR
 - LinkedIn outreach tooling
 - WhatsApp workflows
 - Google Workspace integrations
-- HeyReach-style campaign orchestration
+- Campaign orchestration
 - scheduled / event-driven automation
 
 ## Design principle
