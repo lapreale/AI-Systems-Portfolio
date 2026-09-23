@@ -1,66 +1,78 @@
 # Restaurant Reservation & Operations Platform
 
 ## Overview
-A full-stack restaurant operations platform designed around reservations, customer information, internal workflows and operational visibility.
+A reusable restaurant-operations architecture demonstrated across **Arrechísimos, DOMODOMO and Valjunquera**.
 
-Unlike a simple booking bot, the architecture creates a structured application and data layer that can support automation, analytics and AI-assisted operations.
+The objective is broader than a booking widget: connect customer acquisition, reservations, service workflows, operational data and reporting into a structured system that can evolve toward automation and AI-assisted operations.
 
-## Core capabilities
-- reservations and customer records
-- operational dashboard
-- authentication and sessions
-- structured database access
-- live / event-driven updates
-- reporting and analytics components
-- API-ready service architecture
+## Implementations
 
-## Implemented architecture
+### Arrechísimos
+The most complete full-stack implementation, with a structured frontend/backend and relational data layer.
 
-```mermaid
-flowchart LR
-    UI[React + TypeScript] --> API[Express Backend]
-    API --> AUTH[Auth / Sessions]
-    API --> DB[(PostgreSQL)]
-    API --> WS[WebSocket Events]
-    DB --> ORM[Drizzle ORM]
-    API --> ANALYTICS[Reporting / Analytics]
-    API --> AI[AI Integration Layer]
-```
-
-## Implemented stack
-### Frontend
+**Implemented stack**
 - React
 - TypeScript
 - Vite
-- Radix UI
-- TanStack Query
-- Tailwind ecosystem
-
-### Backend
-- Node.js
-- Express
+- Node.js / Express
+- PostgreSQL / SQL
+- Drizzle ORM
 - REST-oriented services
 - WebSockets
-- Passport authentication
+- authentication / sessions
 - Zod validation
-
-### Data
-- PostgreSQL
-- SQL
-- Drizzle ORM
-
-### Analytics
 - Recharts
-- structured operational reporting
 
-## AI / data extension
-For heavier analytics or ML/AI workloads, the architecture can add **Python services** behind the API layer without coupling them to the frontend.
+### DOMODOMO
+A lightweight operational web-app pattern connecting frontend experience with business logic and external integrations.
+
+**Architecture pattern**
+- web frontend
+- operational backend/integration layer
+- Netlify deployment
+- API/workflow integrations
+- centralized business actions
+
+### Valjunquera
+A customer-facing restaurant experience focused on discovery and conversion.
+
+**Implemented areas**
+- menu
+- featured items
+- gallery
+- reservations
+- reviews
+- contact
+- multilingual experience
+- React / Vite frontend
+
+## Shared architecture
+
+```mermaid
+flowchart LR
+    CUSTOMER[Customer] --> UI[Web / Mobile Experience]
+    UI --> RES[Reservations]
+    UI --> MENU[Menu / Services]
+    UI --> CONTACT[Customer Interaction]
+    RES --> API[Operational Backend]
+    CONTACT --> API
+    API --> DB[(Customer & Operations Data)]
+    DB --> DASH[Reporting / Dashboard]
+    API --> AUTO[Automation Layer]
+    AUTO --> AI[AI-Assisted Operations]
+```
 
 ## What it demonstrates
-Full-stack product architecture · database design · operations software · API design · scalable AI adoption
+- reusable product architecture across different restaurants
+- full-stack implementation
+- SQL / relational data design
+- customer experience
+- reservations and service workflows
+- analytics and reporting
+- automation-ready operational systems
 
 ## My role
-Product architecture, operational workflow design, data model direction, frontend/backend implementation and AI integration planning.
+Product architecture, operational workflow design, data model direction, frontend/backend implementation, integration design and AI-adoption planning.
 
 ## Public portfolio note
-This case study is based on a private implementation. Source code and client-specific configuration remain private.
+The public case study combines patterns from multiple private/client implementations. Client-specific business logic and production data remain private.
