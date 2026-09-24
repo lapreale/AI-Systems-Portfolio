@@ -63,7 +63,7 @@ A self-hosted orchestration architecture for coordinating specialized AI agents,
 
 **Stack:** Docker · Linux/VPS · GitHub Actions · REST APIs · Telegram · model-routing layer · LLM providers · agentic workflows
 
-[View case study →](projects/zordon.md)
+[View case study →](projects/zordon-Multi-Agent%20AI.md)
 
 ---
 
@@ -158,7 +158,7 @@ A privacy-first approach for adapting and deploying models inside controlled env
 
 **What it demonstrates:** local AI · model adaptation · fine-tuning patterns · RAG/embeddings · evaluation · privacy · governance
 
-[View case study →](projects/private-ai-model-adaptation.md)
+[View case study →](projects/private-ai-model-training.md)
 
 ---
 
